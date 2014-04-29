@@ -1,0 +1,128 @@
+﻿@model Kalinabiri.Models.Parent
+@{
+    ViewBag.Title = "Create";
+}
+<h2>
+    Register Parent
+</h2>
+
+<hr></hr>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <table>
+     <tr>
+        <td colspan="2">
+            @Html.ActionLink("Back to List", "Index")
+        </td>
+    </tr>
+        <tr>
+        @Html.HiddenFor(model => model.ParentID)
+            <td class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </td>
+            <tr>
+            </tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.OtherNames)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.OtherNames)
+                @Html.ValidationMessageFor(model => model.OtherNames)
+            </td>
+            </tr>
+            <tr>
+        <td>
+            @Html.LabelFor(model => model.Gender)
+        </td>
+        <td>
+            @Html.DropDownList("Gender", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select Gender---", Value=string.Empty },
+                    new SelectListItem{ Text="Male", Value = "Male" },
+                    new SelectListItem{ Text="Female", Value = "Female" },
+                   
+                 })
+            @Html.ValidationMessageFor(model => model.Gender)
+        </td>
+    </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.Occupation)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.Occupation)
+                @Html.ValidationMessageFor(model => model.Occupation)
+            </td>
+            </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.PlaceOfWork)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.PlaceOfWork)
+                @Html.ValidationMessageFor(model => model.PlaceOfWork)
+            </td>
+            </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.TelephoneNumber)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.TelephoneNumber)
+                @Html.ValidationMessageFor(model => model.TelephoneNumber)
+            </td>
+            </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.Residence)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.Residence)
+                @Html.ValidationMessageFor(model => model.Residence)
+            </td>
+           </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.Parish)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.Parish)
+                @Html.ValidationMessageFor(model => model.Parish)
+            </td>
+            </tr>
+            <tr>
+            <td class="editor-label">
+                @Html.LabelFor(model => model.Division)
+            </td>
+            <td class="editor-field">
+                @Html.EditorFor(model => model.Division)
+                @Html.ValidationMessageFor(model => model.Division)
+            </td>
+            </tr>
+           <tr>
+        <td>
+            @Html.LabelFor(model => model.District)
+        </td>
+        <td>
+            @Html.DropDownList("DistrictID", new SelectList(Kalinabiri.Models.District.getDistricts(), "DistrictID", "Name"))
+            @Html.ValidationMessageFor(model => model.District)
+        </td>
+    </tr>
+            <tr>
+            <td colspan="2">
+                <input type="submit" value="SUBMIT" style="margin-left: 160px; margin-top: 20px;
+                    background-color: #00008B; width: 200px">
+            </td>
+        </tr>
+    </table>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

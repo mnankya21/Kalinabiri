@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+
+<link href="@Url.Content("~/sdmenu/sdmenu.css")" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="@Url.Content("~/sdmenu/sdmenu.js")" ></script>
+<script language="javascript" type="text/javascript">
+    var myMenu;
+    window.onload = function () {
+        myMenu = new SDMenu("my_menu");
+        myMenu.init();
+    };
+</script>
+</head>
+<h2>Menu</h2>
+<body>
+<section class="content-wrapper main-content clear-fix">
+
+<table>
+    <tr>
+        <td>
+            <div style="float: left" id="my_menu" class="sdmenu">
+                <div>
+                    <span>Project Details</span>
+                    <li>@Html.ActionLink("Project Documentation", "Create", "ProjectDocumentation")</li>
+                    <li>@Html.ActionLink("Project Description", "Create", "ProjectDescription")</li>
+                </div>
+                <div>
+                
+                    <span>Project Department</span>
+                    <li>@Html.ActionLink("Project Department", "Create", "Department")</li>
+                    <li>@Html.ActionLink("Department Staffs", "Create", "Staff")</li>
+                    <li>@Html.ActionLink("Client Information", "Create", "Client")</li>
+                </div>
+                <div>
+                    <span>Project Attachments</span>
+                    <li>@Html.ActionLink("Project Activities", "Create", "Activity")</li>
+                    <li>@Html.ActionLink("Project Deliverables", "Create", "Deliverables")</li>
+                    <li>@Html.ActionLink("Project Milestones", "Create", "Milestone")</li>
+                </div>
+            </div>
+        </td>
+         
+</table>
+@RenderBody()
+</section>
+
+</body>

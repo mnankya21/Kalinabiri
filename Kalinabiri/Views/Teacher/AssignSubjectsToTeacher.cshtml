@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Kalinabiri.Models.SubjectAndTeacher>
+@{
+    ViewBag.Title = "Assign subject to teacher";
+}
+&nbsp;
+
+      <h1> Teacher: @(((Kalinabiri.Models.Teacher)ViewBag.Teacher).FirstName) @(((Kalinabiri.Models.Teacher)ViewBag.Teacher).OtherNames)</h1>
+<hr></hr>
+
+<div>
+    @using (Html.BeginForm())
+    {
+       <table>
+          <tr>
+            <td>
+         <b>Subject: </b>
+        </td>
+        <td>
+        @Html.DropDownList("SubjectID",
+                      new SelectList(Kalinabiri.Models.Subject.getSubjects(), "SubjectID", "Name"))
+                
+        </td>
+    </tr>
+  
+
+   <tr>
+        <td>
+           <b> Class</b>
+        </td>
+        <td>
+            @Html.DropDownList("classAttached", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select Class---", Value=string.Empty },
+                    new SelectListItem{ Text="P.1", Value = "P.1" },
+                    new SelectListItem{ Text="P.2", Value = "P.2" },
+                     new SelectListItem{Text="P.3", Value = "P.3" },
+                     new SelectListItem{ Text="P.4", Value = "P.4" },
+                     new SelectListItem{ Text="P.5", Value = "P.5" },
+                     new SelectListItem{ Text="P.6", Value = "P.6" },
+                     new SelectListItem{ Text="P.7", Value = "P.7" },
+                 })
+        </td>
+    </tr>
+    <tr>
+        <td> @Html.ActionLink("Back to List", "Index")</td>
+        <td>
+         <input type="submit" value="Assign" style="margin-left: 10px; marin-top: 20px;
+                            background-color: blue; width: 150px" />
+        </td>
+        </tr>
+</table>
+         
+        @Html.Hidden("TeacherID", ((Kalinabiri.Models.Teacher)ViewBag.Teacher).TeacherID)
+       
+        
+           
+    }
+    <div id="view" >
+    <hr></hr>
+<table>
+    <tr>
+        <th> Subject Name</th>
+         <th> Class</th>
+           <th> Remove Subject</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Subject.Name)
+               
+            </td>
+            <td>
+             @Html.DisplayFor(modelItem => item.classAttached)
+            </td>
+            
+            <td>
+            @Html.ActionLink("Remove", "Delete", new { id=item.SubjectTeacherID })
+
+        </td>
+        </tr>
+    }
+
+</table>
+
+</div>
+
+
+
+

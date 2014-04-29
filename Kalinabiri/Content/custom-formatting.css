@@ -1,0 +1,238 @@
+﻿
+/*
+Table Formatting
+-----------------------
+*/
+.large-table
+{
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+/*
+    Menu Additions
+-----------------------------
+*/
+.menu-nowrap
+{
+    white-space: nowrap;
+}
+
+/*
+    Backgrounds
+----------------------------
+*/
+.white-background
+{
+    background-color: White;
+}
+/*
+Result tables
+.-------------------------------
+*/
+#view td
+{
+    padding: 1.15em 2em 0.25em 0em;
+   
+    padding: 0.15em 2em 0.25em 0em;
+    border: 1px;
+    border-bottom-style: double;
+    font-size: 14px;
+}
+
+#view2 td
+{
+   
+     border: 1px;
+    border-bottom-style: double;
+    padding: 0.15em 2em 0.25em 0em;
+    border: 0px;
+    
+    font-size: 14px;
+}
+#view table
+{
+    min-width:800px;
+    
+    }
+/*
+Result tables headers
+.-------------------------------
+*/
+th
+{
+    border: 10px;
+    background-color:green;
+    color: White;
+    font-size: 13px;
+    text-align: left;
+    font-size: 1.2em;
+    padding-right: 30px;
+}
+/*
+Result tables headers
+.-------------------------------
+*/
+
+#body
+{
+    vertical-align: top;
+}
+
+hr
+{
+    color:Green;
+    background-color:Green;
+    height:2px;
+}
+/*  
+Dropdown css
+----------------------------------
+*/
+select
+{
+    min-width: 200px;
+    min-height: 20px;
+    font-size: 16px;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+.borderMargin
+{
+    border-style:groove;
+  border-width:2px;
+  padding-left:20px;
+  border-radius:10px;
+  border-color:EEDDCE;
+  min-height:380px;
+ 
+    }
+    
+ /*---------------feedback messages-------------------------------*/
+ 
+ .red
+ {
+     
+    color:Red;
+     font-size:large;
+     }
+     
+      .green
+ {
+     
+   width: 400px;
+   border: 1px solid red;
+   border-radius: 5px;
+   font-family: Arial;
+   font-size: 15px;
+   background-color: rgb(236, 255, 216);
+   color: red;
+   text-align: center;
+   margin-top: 3px;
+ 
+ }
+ 
+       .loggedin
+ {
+     
+   width: 200px;
+   border: 1px solid red;
+   border-radius: 5px;
+   font-family: Arial;
+   font-size: 15px;
+   background-color: rgb(236, 255, 216);
+   color: red;
+   text-align: center;
+   display:block;
+   position:absolute;
+   margin-left:450px;
+ }
+  .logout
+  {
+    
+   width: 60px;
+  background-color: white;
+   border-radius: 5px;
+   font-family:Arial Narrow;
+   font-size: 15px;
+   color: white;
+   text-align: center;
+   display:block;
+   position:absolute;
+   margin-left:640px;
+   border: 1px solid green;
+ }
+ 
+ 
+ #view3 table
+{
+    min-width:800px;
+    
+    }
+ #view3 td
+ {
+     
+   padding: 1.15em 2em 0.25em 0em;
+   
+    padding: 0.15em 2em 0.25em 0em;
+    border: 1px;
+    border-bottom-style: double;
+    font-size: 14px;
+     }
+ 
+ 
+ #view3 .display-label
+ {
+     font-family:Arial Baltic;
+    
+     font-size:large;
+     }
+     
+   #view3 .display-field
+   {
+     font-family:Iskoola Pota;
+       
+     font-size:large;
+     color:Blue;
+       }
+     
+
+.photo
+{
+    
+    width:100px;
+    height:120px; 
+    border-style:groove; 
+    border-width:2px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:8px;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+   
+    background-color:white;
+    border-radius:10px;
+       -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.9), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    }
+    
+ #view tr:nth-child(odd)
+    {
+        background: #EEE;
+    }
+#view  tr:nth-child(even)		
+{
+     background: white;
+}
+    #view3  tr:nth-child(odd)
+    {
+        background: #EEE;
+         }
+         
+ #view3 tr:nth-child(even)		
+{
+     background: white;
+     }

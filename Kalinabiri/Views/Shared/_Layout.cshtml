@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="@Url.Content("~/sdmenu/sdmenu.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/custom-formatting.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/PagedList.css")" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="@Url.Content("~/sdmenu/sdmenu.js")" ></script>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    <script language="javascript" type="text/javascript">
+        $(document).ready(function () {
+            try {
+                $(".ui-date-picker").datepicker({ dateFormat: 'yy-mm-dd' });
+            } catch (e) { alert(e); }
+        });
+
+        var myMenu;
+        window.onload = function () {
+            myMenu = new SDMenu("my_menu");
+            myMenu.init();
+        };
+    </script>
+</head>
+<body class="white-background">
+    <table class="large-table" style="border-right: solid 1px #00008B; border-left: solid 2px #00008B;
+        margin-right: 15px;">
+        <tr style="background-color: #00008B">
+            <td>
+                <img src="../../Images/logo.png" style="width: 130px; height: 100px;">
+            </td>
+            <td>
+                <p class="site-title">
+                    KALINABIRI PRIMARY SCHOOL</p>
+                <header>
+            <div class="content-wrapper">
+                     
+                <div class="float-right">   
+                    <nav>
+                        <ul id="menu">                           
+                           
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: red; height: 5px">
+            </td>
+        </tr>
+        <td style="vertical-align: top; border-right: 10px; min-width: 200px; border-right: solid 1px Green;
+            border-spacing: 4px; padding-left: 10px;">
+            <table>
+                <tr>
+                    <td>
+                        <div id="my_menu" class="sdmenu">
+                            <div>
+                                <span>Pupils</span>
+                                <li>@Html.ActionLink("Register Pupil", "Index", "Pupil")</li>
+                            </div>
+                            <div>
+                                <span class="menu-nowrap">Teachers</span>
+                                <li>@Html.ActionLink("Teacher", "Index", "Teacher")</li>
+                            </div>
+
+                             <div>
+                                <span class="menu-nowrap">Parents</span>
+                                <li>@Html.ActionLink(" View Parents", "Index", "Parent")</li>
+                            </div>
+                            <div>
+                                <span class="menu-nowrap">Setup</span>
+                                <li>@Html.ActionLink("Districts", "Index", "District")</li>
+                                <li>@Html.ActionLink("Houses", "Index", "House")</li>
+                                <li>@Html.ActionLink("Subjects", "Index", "Subject")</li>
+                            </div>
+                        </div>
+                    </td>
+                    <tr>
+            </table>
+        </td>
+        <td style="border: 4px;">
+            <div id="body" class="FrameBorder">
+                @RenderSection("featured", required: false)
+                <section class="content-wrapper main-content clear-fix" style="min-height: 400px">
+                @if (TempData["message"] != null)
+                {
+       <div class="Message">@TempData["message"]</div>
+                }
+                <div class="loggedin"> Logged in as @Session["name"]</div>
+                <div class="logout">@Html.ActionLink("Logout", "Logout", "Home")</div>
+                @RenderBody()
+             
+            </section>
+                <script type="text/javascript">
+
+                    $(function () {
+                        $("#body").fadeOut(100).fadeIn(1000);
+
+                    });
+                </script>
+                <script type="text/javascript">
+
+                    $(function () {
+                        $(".green").show(4000).fadeOut(80000);
+
+                    });
+                </script>
+                <script type="text/javascript">
+
+                    $(function () {
+                        $(".red").show(4000).fadeOut(8000);
+
+                    });
+                
+                </script>
+              
+            </div>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr></hr>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <footer style="text-align: center">
+            
+                <div style="font-size:12px;" class="float-left">
+                <p>&copy; Software World(U) Ltd @DateTime.Now.Year </p>
+                </div>
+            
+        </footer>
+                @RenderSection("scripts", required: false)
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿@model Kalinabiri.Models.House
+
+@{
+    ViewBag.Title = "Edit House";
+}
+
+<h2>Edit House</h2>
+<hr></hr>
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <table>
+       <tr>
+       @Html.HiddenFor(model=>model.HouseID)
+        <td class="editor-label">
+            @Html.LabelFor(model => model.Name)
+        </td>
+        <td class="editor-field">
+            @Html.EditorFor(model => model.Name)
+            @Html.ValidationMessageFor(model => model.Name)
+        </td>
+        </tr>
+        <tr>
+        <td class="editor-label">
+            @Html.LabelFor(model => model.color)
+        </td>
+        <td class="editor-field">
+            @Html.EditorFor(model => model.color)
+            @Html.ValidationMessageFor(model => model.color)
+        </td>
+        </tr>
+      <tr>
+        <td>
+            @Html.ActionLink("Back to List", "Index")
+        </td>
+        <td colspan="2">
+            <input type="submit" value="SUBMIT" style="margin-left: 20px; margin-top: 20px;
+                background-color: #00008B; width: 200px">
+        </td>
+    </tr>
+    </table>
+}
+

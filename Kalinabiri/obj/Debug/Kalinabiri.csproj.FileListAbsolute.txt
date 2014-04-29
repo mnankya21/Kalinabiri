@@ -1,0 +1,111 @@
+G:\Projects\Kalinabiri\Kalinabiri\bin\Kalinabiri.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\Kalinabiri.pdb
+G:\Projects\Kalinabiri\Kalinabiri\bin\Antlr3.Runtime.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.AspNet.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.Core.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.Consumer.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\EntityFramework.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.Infrastructure.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.WebPages.OAuth.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\Newtonsoft.Json.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.Formatting.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.WebRequest.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Helpers.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.WebHost.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Mvc.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Optimization.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Razor.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Deployment.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Razor.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\WebGrease.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.Data.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.WebData.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\EntityFramework.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\Newtonsoft.Json.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.Formatting.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.WebRequest.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Helpers.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.WebHost.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Mvc.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Razor.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Deployment.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Razor.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.Data.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.WebPages.OAuth.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.WebData.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.AspNet.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.Core.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.Consumer.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.dll
+G:\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.pdb
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.csprojResolveAssemblyReference.cache
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.pdb
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Kalinabiri.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Kalinabiri.pdb
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Antlr3.Runtime.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.Core.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\EntityFramework.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Newtonsoft.Json.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.Formatting.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.WebRequest.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Helpers.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.WebHost.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Mvc.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Optimization.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Razor.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\WebGrease.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.Data.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.WebData.dll
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\EntityFramework.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Newtonsoft.Json.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.Formatting.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Net.Http.WebRequest.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Helpers.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Http.WebHost.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Mvc.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.Razor.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.Data.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\WebMatrix.WebData.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.Core.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Mary Nankya\Documents\Visual Studio 2010\Projects\Kalinabiri\Kalinabiri\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\Rotativa.dll
+G:\Projects\Kalinabiri\Kalinabiri\obj\Debug\Kalinabiri.csprojResolveAssemblyReference.cache
+G:\Projects\Kalinabiri\Kalinabiri\bin\PagedList.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\PagedList.Mvc.dll
+G:\Projects\Kalinabiri\Kalinabiri\bin\PagedList.xml
+G:\Projects\Kalinabiri\Kalinabiri\bin\PagedList.Mvc.xml

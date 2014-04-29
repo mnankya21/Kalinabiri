@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="@Url.Content("~/Content/custom-formatting.css")" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+</head>
+<body class="white-background">
+    <table class="large-table">
+        <tr style="color: black">
+            <td>
+                <img src="../../Images/logo.png" style="width: 130px; height: 100px;">
+            </td>
+            <td>
+                <center><p class="site-title" style="color: black">
+                    KALINABIRI PRIMARY SCHOOL </p></center>
+                   
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="background-color: red; height: 1px">
+            </td>
+        </tr>
+        <td style="border: 4px;" colspan="2">
+            <div id="body" class="FrameBorder">
+                @RenderSection("featured", required: false)
+                <section class="content-wrapper main-content clear-fix" style="min-height: 500px">
+   
+                @RenderBody()
+             
+            </section>
+            </div>
+        </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr></hr>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <footer style="text-align: center">
+            
+                <div style="font-size:12px;" class="float-left">
+                <p>&copy; Software World(U) Ltd @DateTime.Now.Year </p>
+                </div>
+            
+        </footer>
+                @RenderSection("scripts", required: false)
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

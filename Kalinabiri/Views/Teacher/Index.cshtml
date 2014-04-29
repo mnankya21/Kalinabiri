@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Kalinabiri.Models.Teacher>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of Teachers</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")|
+    @Html.ActionLink("Export to PDF", "GeneratePDF")
+</p>
+<hr></hr>
+<div id="view">
+<table>
+    <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherNames)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelephoneNo)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherNames)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelephoneNo)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.TeacherID })|
+             @Html.ActionLink("Assign subjects", "AssignSubjectsToTeacher", new { id=item.TeacherID })
+            
+        </td>
+    </tr>
+}
+
+</table>
+</div>

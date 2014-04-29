@@ -1,0 +1,74 @@
+﻿@model IEnumerable<Kalinabiri.Models.Pupil>
+
+@{
+    ViewBag.Title = "Report";
+    Layout = "~/Views/Shared/_Reports.cshtml";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+   
+    <title>Report</title>
+    <h2><center>LIST OF TEACHERS</center></h2>
+</head>
+<body>
+  <div id="view3">
+    <table>
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OtherNames)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PupilClass)
+        </th>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfEntry)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Stream)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeOfPupil)
+        </th>
+
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OtherNames)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PupilClass)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.Stream)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeOfPupil)
+   
+    </tr>
+}
+    </table>
+    </div>
+</body>
+</html>

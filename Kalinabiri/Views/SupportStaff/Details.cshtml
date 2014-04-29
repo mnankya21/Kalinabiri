@@ -1,0 +1,78 @@
+﻿@model Kalinabiri.Models.SupportStaff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>SupportStaff</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OtherNames)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OtherNames)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Gender)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Gender)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.MaritalStatus)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MaritalStatus)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Religion)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Religion)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.JobDescription)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.JobDescription)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Residence)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Residence)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Parish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Parish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Division)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Division)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.SupportStaffID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

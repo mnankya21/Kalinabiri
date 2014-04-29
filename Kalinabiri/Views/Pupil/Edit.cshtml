@@ -1,0 +1,225 @@
+﻿@model Kalinabiri.Models.Pupil
+@{
+    ViewBag.Title = "Create";
+  
+}
+<h2>Register Pupil </h2>
+ 
+    @if (TempData["Success"] != null)
+    {
+        <div class="green">
+            <p>
+                <strong>Failed:</strong> @TempData["Success"].ToString()</p>
+        </div>
+    }
+<hr></hr>
+      
+<form action="" method="post" enctype="multipart/form-data">
+@Html.ValidationSummary(true)
+<table>
+  <tr>
+            <td colspan="2">
+                @Html.ActionLink("Back to List", "Index")
+
+            </td>
+        </tr>
+    <tr>        @Html.HiddenFor(model => model.PupilID)
+        <td>
+            @Html.LabelFor(model => model.FirstName)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.OtherNames)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.OtherNames)
+            @Html.ValidationMessageFor(model => model.OtherNames)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.Gender)
+        </td>
+        <td>
+            @Html.DropDownList("Gender", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select Gender---", Value=string.Empty },
+                    new SelectListItem{ Text="Male", Value = "Male" },
+                    new SelectListItem{ Text="Female", Value = "Female" },
+                   
+                 })
+            @Html.ValidationMessageFor(model => model.Gender)
+        </td>
+    </tr>
+   
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.DateOfBirth)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.DateOfBirth, "{0:yyyy-MM-dd}", new { @class = "ui-date-picker" })
+            @Html.ValidationMessageFor(model => model.DateOfBirth)
+        </td>
+    </tr>
+     <tr>
+        <td>
+            Class
+        </td>
+        <td>
+            @Html.DropDownList("PupilClass", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select Class---", Value=string.Empty },
+                    new SelectListItem{ Text="P.1", Value = "P.1" },
+                    new SelectListItem{ Text="P.2", Value = "P.2" },
+                     new SelectListItem{Text="P.3", Value = "P.3" },
+                     new SelectListItem{ Text="P.4", Value = "P.4" },
+                     new SelectListItem{ Text="P.5", Value = "P.5" },
+                     new SelectListItem{ Text="P.6", Value = "P.6" },
+                     new SelectListItem{ Text="P.7", Value = "P.7" },
+                 })
+            @Html.ValidationMessageFor(model => model.Gender)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.Stream)
+        </td>
+        <td>
+            @Html.DropDownList("Stream", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select Stream---", Value=string.Empty },
+                    new SelectListItem{ Text="Yellow", Value = "Yellow" },
+                    new SelectListItem{ Text="Green", Value = "Green" },
+                   
+                 })
+            @Html.ValidationMessageFor(model => model.Stream)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.DateOfEntry)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.DateOfEntry, "{0:yyyy-MM-dd}", new { @class = "ui-date-picker" })
+            @Html.ValidationMessageFor(model => model.DateOfEntry)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.TypeOfPupil)
+        </td>
+        <td>
+            @Html.DropDownList("TypeOfPupil", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select---", Value=string.Empty },
+                    new SelectListItem{ Text="Day", Value = "Day" },
+                    new SelectListItem{ Text="Boarding", Value = "Boarding" },
+                   
+                 })
+            @Html.ValidationMessageFor(model => model.TypeOfPupil)
+        </td>
+    </tr>
+       <tr>
+        <td>
+            @Html.LabelFor(model => model.House)
+        </td>
+        <td>
+            @Html.DropDownList("HouseID", new SelectList(Kalinabiri.Models.House.getHouses(), "HouseID", "Name"))
+            @Html.ValidationMessageFor(model => model.District)
+        </td>
+    </tr>
+      <tr>
+        <td>
+            @Html.LabelFor(model => model.HealthProblem)
+        </td>
+        <td>
+            @Html.TextAreaFor(model => model.HealthProblem, new { rows = "10", cols = "20", style = "width:250px;height:160px;" })
+            @Html.ValidationMessageFor(model => model.HealthProblem)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(model => model.Religion)
+        </td>
+        <td>
+            @Html.DropDownList("Religion", new List<SelectListItem>
+                 {
+                    new SelectListItem{ Text="--Select---", Value=string.Empty },
+                    new SelectListItem{ Text="Protestant", Value = "Protestant" },
+                    new SelectListItem{ Text="Moslem", Value = "Moslem" },
+                    new SelectListItem{ Text="Other", Value = "Other" },
+                 })
+            @Html.ValidationMessageFor(model => model.Religion)
+        </td>
+    </tr>
+      <tr>
+        <td>
+            @Html.LabelFor(model => model.Residence)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.Residence)
+            @Html.ValidationMessageFor(model => model.Residence)
+        </td>
+    </tr>
+      <tr>
+        <td>
+            @Html.LabelFor(model => model.Parish)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.Parish)
+            @Html.ValidationMessageFor(model => model.Parish)
+        </td>
+    </tr>
+        <tr>
+        <td>
+            @Html.LabelFor(model => model.Division)
+        </td>
+        <td>
+            @Html.EditorFor(model => model.Division)
+            @Html.ValidationMessageFor(model => model.Division)
+        </td>
+  
+    </tr>
+        <tr>
+        <td>
+            @Html.LabelFor(model => model.District)
+        </td>
+        <td>
+            @Html.DropDownList("DistrictID", new SelectList(Kalinabiri.Models.District.getDistricts(), "DistrictID", "Name"))
+            @Html.ValidationMessageFor(model => model.District)
+        </td>
+    </tr>
+     <tr>
+        <td>
+           Parent Name
+        </td>
+        <td>
+            @Html.DropDownList("ParentID",
+            new SelectList(Kalinabiri.Models.Parent.GetParents(), "ParentID", "FirstName"))
+            @Html.ValidationMessageFor(model => model.parent.FirstName)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Photo
+        </td>
+        <td>
+            <input type="file" name="file" id="file" />
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <input type="submit" value="SUBMIT" style="margin-left: 120px; margin-top: 20px;
+                background-color: #00008B; width: 200px">
+        </td>
+    </tr>
+</table>
+</form>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

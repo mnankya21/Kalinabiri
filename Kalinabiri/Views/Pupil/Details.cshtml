@@ -1,0 +1,217 @@
+﻿@model Kalinabiri.Models.Pupil
+@{
+    ViewBag.Title = "Details";
+}
+<h2>
+    Pupil Details</h2>
+<hr></hr>
+<div id="view3">
+    <table>
+        <tr>
+            <td colspan="2">
+                @Html.ActionLink("Back to List", "Index")|
+                @Html.ActionLink("Edit", "Edit", new { id = Model.PupilID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = Model.PupilID })
+                @if (Model.Photo == null)
+                { 
+                   <img src="../../Images/Nophoto.png" class="photo"/> 
+                }
+                else
+                { 
+                    <img src="@Url.Action("GetImage", "Pupil", new { Model.PupilID })" class="photo"/> 
+                }
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                First Name
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.FirstName)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Other names
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.OtherNames)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Gender
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Gender)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Class
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.PupilClass)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Date of Birth
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Date of Admission
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.DateOfEntry)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Stream
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Stream)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Study Programme
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.TypeOfPupil)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                House
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.House.Name),
+                @Html.DisplayFor(model => model.House.color)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Religion
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Religion)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Helath problems
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.HealthProblem)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Residence
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Residence)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Parish
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Parish)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Division
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Division)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                District
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.District.Name)
+                , @Html.DisplayFor(model => model.District.Region)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label" colspan="2">
+                <h2>
+                    PARENT DETAILS</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Name
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.FirstName)
+                @Html.DisplayFor(model => model.parent.OtherNames)
+            </td>
+        </tr>
+                <tr>
+            <td class="display-label">
+                Gender
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.Gender)
+                
+            </td>
+        </tr>
+            <tr>
+            <td class="display-label">
+                Occupation
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.PlaceOfWork)
+                
+            </td>
+        </tr>
+            <tr>
+            <td class="display-label">
+                Residence
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.Residence)
+                
+            </td>
+        </tr>
+          <tr>
+            <td class="display-label">
+                Parish
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.Parish)
+                
+            </td>
+        </tr>
+          <tr>
+            <td class="display-label">
+                Division
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.Division)
+                
+            </td>
+        </tr>
+           <tr>
+            <td class="display-label">
+                Telephone Number(s)
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.parent.TelephoneNumber)
+                
+            </td>
+        </tr>
+    </table>
+</div>

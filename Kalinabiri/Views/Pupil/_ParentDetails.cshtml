@@ -1,0 +1,72 @@
+﻿@model Kalinabiri.Models.Parent
+
+<fieldset>
+    <legend>Parent</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FirstName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FirstName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.OtherNames)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.OtherNames)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Gender)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Gender)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Occupation)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Occupation)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PlaceOfWork)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PlaceOfWork)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TelephoneNumber)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TelephoneNumber)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Residence)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Residence)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Parish)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Parish)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Division)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Division)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ParentID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

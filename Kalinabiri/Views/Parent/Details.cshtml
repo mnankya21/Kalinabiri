@@ -1,0 +1,91 @@
+﻿@model Kalinabiri.Models.Parent
+@{
+    ViewBag.Title = "Details";
+}
+<h2>
+    Pupil Details</h2>
+<hr></hr>
+<div id="view3">
+    <table>
+        <tr>
+            <td colspan="2">
+                @Html.ActionLink("Back to List", "Index")|
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ParentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = Model.ParentID })
+             
+             
+        </tr>
+        <tr>
+            <td class="display-label">
+                First Name
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.FirstName)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Other names
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.OtherNames)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                Gender
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Gender)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+               Work place
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.PlaceOfWork)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+              Residence
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Residence)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+                parish
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Parish)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+               Division
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.Division)
+            </td>
+        </tr>
+        <tr>
+            <td class="display-label">
+               Telephone Number
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.TelephoneNumber)
+            </td>
+        </tr>
+       @*  <tr>
+            <td class="display-label">
+               District
+            </td>
+            <td class="display-field">
+                @Html.DisplayFor(model => model.District)
+            </td>
+        </tr>*@
+    </table>
+</div>
