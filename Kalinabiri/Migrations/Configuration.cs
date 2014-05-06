@@ -9,7 +9,7 @@ namespace Kalinabiri.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Kalinabiri.Models.Repository context)
